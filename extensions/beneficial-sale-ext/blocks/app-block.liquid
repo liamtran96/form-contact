@@ -1,0 +1,25 @@
+
+
+<div class="container b">
+  <input />
+  <button class="test-calldata">submit</button>
+</div>
+{% render "conntactform" %} 
+{% render "app_snippet" %}
+<script src="{{ 'form-submit.js' | asset_url }}" defer></script>
+{% schema %}
+{
+  "name": "Hello World",
+  "target": "section",
+  "stylesheet": "base.css",
+  "javascript": "app.js",
+  "settings": [
+    {
+      "label": "Color",
+      "id": "color",
+      "type": "color",
+      "default": "#000"
+    }
+  ]
+}
+{% endschema %}
